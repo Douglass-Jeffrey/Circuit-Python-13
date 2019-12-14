@@ -319,6 +319,7 @@ def game_scene():
                                          aliens[alien_number].x + 15, aliens[alien_number].y + 15):
                             # you hit an alien
                             aliens[alien_number].move(constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y)
+                            lasers[laser_number].move(constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y)
                             # add 1 to the score
                             score += 1
                             score_text.clear()
